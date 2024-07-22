@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DMNSN.AspNetCore.Middlewares.CorrelationId", "src\DMSN.AspNetCore.Middlewares.CorrelationId\DMNSN.AspNetCore.Middlewares.CorrelationId.csproj", "{F1A234C4-04B2-4134-B616-31419700422E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMNSN.AspNetCore.Middlewares.CorrelationId.xUnit", "src\DMNSN.AspNetCore.Middlewares.CorrelationId.xUnit\DMNSN.AspNetCore.Middlewares.CorrelationId.xUnit.csproj", "{0814AF7F-7168-4B8C-A1BD-D1F6BE5CD6DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F1A234C4-04B2-4134-B616-31419700422E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1A234C4-04B2-4134-B616-31419700422E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1A234C4-04B2-4134-B616-31419700422E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0814AF7F-7168-4B8C-A1BD-D1F6BE5CD6DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0814AF7F-7168-4B8C-A1BD-D1F6BE5CD6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0814AF7F-7168-4B8C-A1BD-D1F6BE5CD6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0814AF7F-7168-4B8C-A1BD-D1F6BE5CD6DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

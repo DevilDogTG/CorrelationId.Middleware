@@ -1,4 +1,4 @@
-# DMNSN.AspNetCore.Middlewares.CorrelationId
+# Correlation ID Middleware for ASP.NET Core
 
 This middleware is designed to monitor and manage correlation IDs across incoming requests and outgoing responses in ASP.NET Core applications. It ensures that every operation within your application can be traced with a unique identifier, making debugging and monitoring significantly easier.
 
@@ -8,7 +8,24 @@ This middleware is designed to monitor and manage correlation IDs across incomin
 - **Customizable Correlation ID Key:** Allows customization of the HTTP header key used for the correlation ID.
 - **Configurable through appsettings.json:** Easily configure the middleware's behavior through the application's configuration file.
 
+## Solution Structure
+
+The solution is structured into two main projects:
+
+- `DMNSN.AspNetCore.Middlewares.CorrelationId`: The core middleware project.
+- `DMNSN.AspNetCore.Middlewares.CorrelationId.xUnit`: The test project for the middleware.
+
+### DMNSN.AspNetCore.Middlewares.CorrelationId
+
+This project contains the implementation of the Correlation ID middleware. It is responsible for adding a unique correlation ID to the HTTP context of each incoming request. This can then be used for logging and tracing purposes.
+
+### DMNSN.AspNetCore.Middlewares.CorrelationId.xUnit
+
+This project contains the unit tests for the Correlation ID middleware, ensuring its functionality works as expected. It uses xUnit for testing and includes tests for both enabling and disabling the middleware.
+
 ## Getting Started
+
+To get started with using the Correlation ID middleware in your project, please see detail in this section.
 
 ### Prerequisites
 
@@ -56,7 +73,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 }
 ```
 
-1. If you prefer to pass options programmatically, you can use the `UseCorrelationIdMiddleware` extension method:
+3. If you prefer to pass options programmatically, you can use the `UseCorrelationIdMiddleware` extension method:
 
 ```csharp
 app.UseCorrelationIdMiddleware(new CorrelationIdMiddlewareOptions
@@ -65,6 +82,12 @@ app.UseCorrelationIdMiddleware(new CorrelationIdMiddlewareOptions
     CorrelationKey = "X-Correlation-ID"
 });
 ```
+
+## Running the Tests
+
+To run the tests for the Correlation ID middleware, navigate to the DMNSN.AspNetCore.Middlewares.CorrelationId.xUnit project directory and execute the following command:
+
+This will run all the unit tests in the project and output the results.
 
 ## Contributing
 
