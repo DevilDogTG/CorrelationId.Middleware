@@ -2,7 +2,7 @@ $workspace = "$PSScriptRoot\.."
 $projectName = "DMNSN.AspNetCore.Middlewares.CorrelationId"
 $project = "$workspace\src\$projectName\$projectName.csproj"
 $solution = "$workspace\CorrelationIdMiddleware.sln"
-$releaseNotes = "Testing release of CorrelationId Middleware for ASP.NET Core"
+$releaseNotes = "Initial release, starting base version with version of .NET"
 $tagPrefix = ""
 $nugetSource = "nuget.org"
 ##############################################################
