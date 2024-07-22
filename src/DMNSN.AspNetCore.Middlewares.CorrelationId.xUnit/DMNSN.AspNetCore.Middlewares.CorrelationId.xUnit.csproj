@@ -17,7 +17,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\DMSN.AspNetCore.Middlewares.CorrelationId\DMNSN.AspNetCore.Middlewares.CorrelationId.csproj" />
+		<ProjectReference Include="..\DMNSN.AspNetCore.Middlewares.CorrelationId\DMNSN.AspNetCore.Middlewares.CorrelationId.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
