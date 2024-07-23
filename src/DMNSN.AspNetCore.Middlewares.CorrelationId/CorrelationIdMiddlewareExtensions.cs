@@ -16,6 +16,12 @@ namespace DMNSN.AspNetCore.Middlewares.CorrelationId
             var options = configuration.GetSection(DefaultSection).Get<CorrelationIdMiddlewareOptions>() ?? new CorrelationIdMiddlewareOptions();
             return builder.UseMiddleware<CorrelationIdMiddleware>(options);
         }
+        public static IApplicationBuilder UseCorrelationIdMiddleware(this IApplicationBuilder builder, Action<CorrelationIdMiddlewareOptions> configureOptions)
+        {
+            var options = new CorrelationIdMiddlewareOptions();
+            configureOptions(options);
+            return builder.UseMiddleware<CorrelationIdMiddleware>(options);
+        }
         public static IApplicationBuilder UseCorrelationIdMiddleware(this IApplicationBuilder builder, CorrelationIdMiddlewareOptions options)
         {
             return builder.UseMiddleware<CorrelationIdMiddleware>(options);
